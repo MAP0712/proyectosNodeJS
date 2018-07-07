@@ -1,0 +1,29 @@
+<style>
+    .active {
+        font-size: 1.5em;
+    }
+</style>
+
+<h1>Peliculas</h1>
+
+{{#each films}}
+    <h1>{{film_id}} - {{title}}</h1>
+    <p><strong>Title:</strong> {{title}}, Descripcion: {{description}}</p>
+    <p><strong>Año de salida:</strong> {{release_year}}</p>
+{{/each}}
+
+{{#with paginate}}
+    {{#if hasPreviousPages}}
+        <a href="{{#prev_link ../paginate}}{{/prev_link}}">Anterior</a>
+    {{/if}}
+{{/with}}
+
+{{#each links}}
+    <a href={{url}} class="{{#is_active number ../currentPage}}{{/is_active}}">{{number}}</a>
+{{/each}}
+
+{{#with paginate}}
+    {{#has_next_links ../pageCount this}} 
+        <a href="{{#next_link ../this}}{{/next_link}}">Siguiente</a>
+    {{/has_next_links}}
+{{/with}}

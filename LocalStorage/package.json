@@ -1,0 +1,14 @@
+{
+  "name": "localstorage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server ./public"
+  },
+  "author": "Juan Antonio Barea López",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "primera-aplicacion",
+  "description": "ejemplo de trabajo con bower",
+  "main": "",
+  "authors": [
+    "Juan Antonio <jbarealopez2@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  }
+}

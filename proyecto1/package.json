@@ -1,0 +1,14 @@
+{
+  "name": "proyecto1",
+  "version": "1.0.0",
+  "description": "Primer Proyecto con framework express",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "author": "Juan Antonio Barea López",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

@@ -1,0 +1,26 @@
+{{appName}}
+{{#if usuarios.length}}
+
+    {{#each usuarios}}
+
+        {{id}}: {{name}}
+
+    {{/each}}
+
+{{!-- {{else}} Este lo eliminamos porque estamos comprobando con unless
+    No existen usuarios --}}
+{{/if}}
+
+{{#unless usuarios}}
+    0 usuarios
+{{/unless}}
+
+{{#with administrador}}
+{{log ../usuarios}}
+    <p>Nombre: {{nombre}}, Apellidos: {{apellido}}</p>
+{{else}}
+    <p>No existe el administrador</p>
+{{/with}}
+
+{{log "Prueba de log"}}
+{{log administrador}}
